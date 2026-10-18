@@ -1,0 +1,57 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+*.egg
+dist/
+build/
+eggs/
+*.whl
+
+# Virtual environment
+venv/
+.venv/
+env/
+
+# Environment variables
+.env
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Data directories (large files)
+data/documents/*
+data/chroma/*
+data/graph/*
+data/processed/*
+!data/documents/.gitkeep
+!data/chroma/.gitkeep
+!data/graph/.gitkeep
+!data/processed/.gitkeep
+
+# SQLite databases
+*.db
+*.sqlite3
+
+# Logs
+*.log
+logs/
+
+# pytest
+.pytest_cache/
+htmlcov/
+.coverage
+
+# mypy
+.mypy_cache/

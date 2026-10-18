@@ -1,0 +1,16 @@
+# Foundation
+fastapi==0.115.0
+uvicorn[standard]==0.30.6
+pydantic==2.9.1
+pydantic-settings==2.5.2
+python-dotenv==1.0.1
+
+# Stage 2 — Document Ingestion
+PyMuPDF==1.24.14
+python-docx==1.1.2
+python-multipart==0.0.12
+aiofiles==24.1.0
+
+# Stage 3 — Embeddings & Vector Store
+sentence-transformers==3.1.1
+chromadb==1.5.9

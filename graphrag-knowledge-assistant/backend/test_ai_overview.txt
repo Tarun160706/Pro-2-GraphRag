@@ -1,0 +1,14 @@
+# Graph Neural Networks and Knowledge Graphs in Artificial Intelligence
+
+Artificial Intelligence has evolved dramatically with the convergence of deep learning and structured knowledge representations.
+
+## Knowledge Graphs
+A knowledge graph (KG) is a directed labeled multigraph that represents entities as nodes and relationships as edges. Each factual assertion is modeled as a triple (subject, predicate, object), such as (Albert Einstein, bornIn, Germany). Prominent knowledge graphs include Wikidata, DBpedia, and Google Knowledge Graph. Knowledge graphs excel at structured reasoning, symbolic query execution via SPARQL or Cypher, and providing verifiable provenance for facts.
+
+## Graph Neural Networks
+Graph Neural Networks (GNNs) extend deep learning architectures to non-Euclidean graph-structured data. Message Passing Neural Networks (MPNNs) iteratively aggregate feature vectors from neighborhood nodes to update entity representations. Well-known variants include Graph Convolutional Networks (GCN), Graph Attention Networks (GAT), and GraphSAGE. GNNs are applied in molecular chemistry, fraud detection, and recommendation systems.
+
+## GraphRAG: Hybrid Graph and Vector Retrieval
+Traditional Retrieval-Augmented Generation (RAG) relies on dense vector search over text chunks using embedding models like Sentence Transformers. While effective for localized semantic matching, vector RAG often fails at multi-hop reasoning, relationship traversal, and holistic summarization across disparate documents.
+
+GraphRAG combines vector retrieval with knowledge graph traversal. When a query is received, the system extracts key entities, retrieves relevant subgraphs, and combines graph facts with vector-retrieved text passages. The resulting context allows Large Language Models (LLMs) to generate hallucination-resistant, well-grounded answers with verifiable citations.

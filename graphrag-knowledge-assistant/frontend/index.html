@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="GraphRAG Knowledge Intelligence Assistant — Hybrid RAG combining dense vector search and knowledge graph traversal.">
+    <title>GraphRAG Knowledge Intelligence Assistant</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Vis.js Network for Knowledge Graph Visualization (Local) -->
+    <script src="/js/vis-network.min.js"></script>
+
+    <!-- Markdown & Sanitization (Local) -->
+    <script src="/js/marked.min.js"></script>
+    <script src="/js/purify.min.js"></script>
+
+    <!-- App Stylesheet -->
+    <link rel="stylesheet" href="/css/styles.css?v=graphfix3">
+</head>
+<body>
+
+    <!-- ── Top Navigation Bar ───────────────────────────────── -->
+    <header class="navbar">
+        <div class="nav-brand">
+            <div class="brand-icon">
+                <i class="fa-solid fa-brain"></i>
+            </div>
+            <div class="brand-info">
+                <span class="brand-title">GraphRAG Assistant</span>
+                <span class="brand-badge">Hybrid Intelligence Platform</span>
+            </div>
+        </div>
+
+        <nav class="nav-tabs" aria-label="Main Navigation">
+            <button class="nav-tab-btn active" data-tab="chat" id="tabChatBtn">
+                <i class="fa-regular fa-comments"></i>
+                <span>Intelligent Chat</span>
+            </button>
+            <button class="nav-tab-btn" data-tab="graph" id="tabGraphBtn">
+                <i class="fa-solid fa-diagram-project"></i>
+                <span>Knowledge Graph</span>
+            </button>
+            <button class="nav-tab-btn" data-tab="docs" id="tabDocsBtn">
+                <i class="fa-regular fa-folder-open"></i>
+                <span>Documents</span>
+            </button>
+            <button class="nav-tab-btn" data-tab="diag" id="tabDiagBtn">
+                <i class="fa-solid fa-chart-line"></i>
+                <span>Diagnostics</span>
+            </button>
+        </nav>
+
+        <div class="nav-stats">
+            <div class="stat-pill" title="Ingested Documents">
+                <i class="fa-regular fa-file" style="color:var(--accent-indigo);"></i>
+                <span>Docs: <b id="statDocsCount">-</b></span>
+            </div>
+            <div class="stat-pill" title="Total Indexed Chunks">
+                <i class="fa-solid fa-cubes-stacked" style="color:var(--accent-cyan);"></i>
+                <span>Chunks: <b id="statChunksCount">-</b></span>
+            </div>
+            <div class="stat-pill" title="Extracted Entities & Triples">
+                <i class="fa-solid fa-circle-nodes" style="color:var(--accent-purple);"></i>
+                <span>Nodes: <b id="statNodesCount">-</b></span>
+            </div>
+            <div class="system-status">
+                <div class="status-dot pulse" id="systemStatusDot"></div>
+                <span id="systemStatusText">Connecting...</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- ── Main Application Content ─────────────────────────── -->
+    <main class="main-content">
+
+        <!-- ═══════════════════════════════════════════════════════
+             VIEW 1: INTELLIGENT CHAT & RETRIEVAL
+             ═══════════════════════════════════════════════════════ -->
+        <section class="view-panel active" id="view-chat">
+            <div class="chat-layout">
+                <div class="chat-main">
+
+                    <!-- Chat Header / Controls -->
+                    <div class="chat-controls-bar">
+                        <div class="mode-selector">
+                            <button class="mode-btn active" data-mode="hybrid" id="btnModeHybrid" title="Fuses vector search and knowledge graph traversal with Reciprocal Rank Fusion">
+                                <i class="fa-solid fa-wand-magic-sparkles"></i>
+                                <span>Hybrid RAG</span>
+                                <span class="badge-rec">Rec</span>
+                            </button>
+                            <button class="mode-btn" data-mode="vector_only" id="btnModeVector" title="Pure dense ChromaDB semantic chunk retrieval">
+                                <i class="fa-solid fa-vector-square"></i>
+                                <span>Vector Only</span>
+                            </button>
+                            <button class="mode-btn" data-mode="graph_only" id="btnModeGraph" title="Pure relational subgraph traversal">
+                                <i class="fa-solid fa-diagram-project"></i>
+                                <span>Graph Only</span>
+                            </button>
+                        </div>
+
+                        <div class="retrieval-params">
+                            <div class="param-item">
+                                <span>Filter:</span>
+                                <select id="docFilterSelect" title="Restrict retrieval to a specific document">
+                                    <option value="">All Documents</option>
+                                </select>
+                            </div>
+                            <div class="param-item">
+                                <span>Chunks:</span>
+                                <select id="topKSelect" title="Number of top vector chunks to retrieve">
+                                    <option value="2">2</option>
+                                    <option value="3" selected>3</option>
+                                    <option value="5">5</option>
+                                    <option value="8">8</option>
+                                </select>
+                            </div>
+                            <div class="param-item">
+                                <span>Graph Hops:</span>
+                                <select id="hopsSelect" title="Maximum hops for neighborhood graph traversal">
+                                    <option value="1" selected>1 Hop</option>
+                                    <option value="2">2 Hops</option>
+                                    <option value="3">3 Hops</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Chat Message Stream -->
+                    <div class="chat-stream" id="chatStream">
+                        <!-- Welcome State -->
+                        <div class="chat-welcome" id="chatWelcome">
+                            <div class="welcome-logo">
+                                <i class="fa-solid fa-brain"></i>
+                            </div>
+                            <h1 class="welcome-title">GraphRAG Knowledge Intelligence</h1>
+                            <p class="welcome-subtitle">
+                                Combining dense ChromaDB vector embeddings with structured Knowledge Graph entity networks.
+                                Ask questions with strict grounding and verifiable citations.
+                            </p>
+
+                            <div class="starter-chips-grid">
+                                <div class="starter-chip" data-query="What is GraphRAG and how does it combine knowledge graphs with vector retrieval?">
+                                    <i class="fa-regular fa-lightbulb"></i>
+                                    <span>What is GraphRAG and how does it combine knowledge graphs with vector retrieval?</span>
+                                </div>
+                                <div class="starter-chip" data-query="What are the key concepts and entities discussed in the ingested documents?">
+                                    <i class="fa-solid fa-sitemap"></i>
+                                    <span>What are the key concepts and entities discussed in the ingested documents?</span>
+                                </div>
+                                <div class="starter-chip" data-query="Explain how Reciprocal Rank Fusion (RRF) boosts chunks that mention graph entities.">
+                                    <i class="fa-solid fa-code-compare"></i>
+                                    <span>Explain how Reciprocal Rank Fusion (RRF) boosts chunks that mention graph entities.</span>
+                                </div>
+                                <div class="starter-chip" data-query="What relationships exist between machine learning, neural networks, and knowledge graphs?">
+                                    <i class="fa-solid fa-circle-nodes"></i>
+                                    <span>What relationships exist between machine learning, neural networks, and knowledge graphs?</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Chat Input Area -->
+                    <div class="chat-input-wrapper">
+                        <div class="chat-input-box">
+                            <textarea 
+                                class="chat-textarea" 
+                                id="chatInput" 
+                                rows="1" 
+                                placeholder="Ask a question grounded in your documents and knowledge graph... (Enter to send, Shift+Enter for newline)"
+                            ></textarea>
+                            <button class="chat-send-btn" id="chatSendBtn" title="Send Question">
+                                <i class="fa-solid fa-arrow-up"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══════════════════════════════════════════════════════
+             VIEW 2: KNOWLEDGE GRAPH VISUALIZER
+             ═══════════════════════════════════════════════════════ -->
+        <section class="view-panel" id="view-graph">
+            <div class="graph-layout">
+                <div class="graph-canvas-container">
+                    <div id="graphCanvas"></div>
+
+                    <!-- Top Toolbar -->
+                    <div class="graph-top-toolbar">
+                        <div class="graph-search-box">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <input type="text" class="graph-search-input" id="graphSearchInput" placeholder="Search entity (e.g. GraphRAG, AI)...">
+                        </div>
+
+                        <div class="graph-filter-types">
+                            <button class="type-filter-chip active" data-type="ALL">All</button>
+                            <button class="type-filter-chip" data-type="CONCEPT">Concepts</button>
+                            <button class="type-filter-chip" data-type="TECHNOLOGY">Tech</button>
+                            <button class="type-filter-chip" data-type="PERSON">People</button>
+                            <button class="type-filter-chip" data-type="ORGANIZATION">Orgs</button>
+                        </div>
+                    </div>
+
+                    <!-- Floating Canvas Controls -->
+                    <div class="graph-floating-controls">
+                        <button class="graph-ctrl-btn" id="btnZoomIn" title="Zoom In">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                        <button class="graph-ctrl-btn" id="btnZoomOut" title="Zoom Out">
+                            <i class="fa-solid fa-minus"></i>
+                        </button>
+                        <button class="graph-ctrl-btn" id="btnFitGraph" title="Fit to Canvas">
+                            <i class="fa-solid fa-expand"></i>
+                        </button>
+                        <button class="graph-ctrl-btn" id="btnTogglePhysics" title="Pause / Play Layout Physics">
+                            <i class="fa-solid fa-pause"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Side Node Inspector Panel -->
+                <aside class="graph-inspector-panel" id="graphInspector">
+                    <div class="inspector-header">
+                        <span class="inspector-title">Entity Inspector</span>
+                        <i class="fa-solid fa-circle-info" style="color:var(--accent-cyan);"></i>
+                    </div>
+
+                    <div id="inspectorEmpty" style="color:var(--text-muted); font-size:13px; text-align:center; padding:30px 10px;">
+                        <i class="fa-solid fa-arrow-pointer" style="font-size:24px; margin-bottom:12px; opacity:0.5;"></i>
+                        <p>Click on any node in the graph to inspect its properties, connections, and relational facts.</p>
+                    </div>
+
+                    <div id="inspectorContent" class="inspector-body" style="display:none;">
+                        <div class="inspector-entity-card">
+                            <div class="entity-name-big" id="inspectorEntityName">-</div>
+                            <span class="entity-type-badge" id="inspectorEntityType">CONCEPT</span>
+                            <p style="color:var(--text-secondary); font-size:12.5px; margin-top:10px; line-height:1.5;" id="inspectorEntityDesc">
+                                -
+                            </p>
+                        </div>
+
+                        <div>
+                            <div class="inspector-section-label">Connected Relationships</div>
+                            <div class="inspector-relations-list" id="inspectorRelationsList">
+                                <!-- Relations inserted dynamically -->
+                            </div>
+                        </div>
+
+                        <div style="display:flex; flex-direction:column; gap:10px; margin-top:8px;">
+                            <button class="inspector-action-btn" id="inspectorAskBtn">
+                                <i class="fa-regular fa-comment-dots"></i>
+                                <span>Ask Assistant About This Entity</span>
+                            </button>
+                            <button class="btn-secondary" style="justify-content:center; padding:10px;" id="inspectorExpandBtn">
+                                <i class="fa-solid fa-diagram-next"></i>
+                                <span>Expand 2-Hop Neighborhood</span>
+                            </button>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </section>
+
+        <!-- ═══════════════════════════════════════════════════════
+             VIEW 3: DOCUMENT MANAGEMENT
+             ═══════════════════════════════════════════════════════ -->
+        <section class="view-panel" id="view-docs">
+            <div class="docs-layout">
+                <div class="docs-header">
+                    <div>
+                        <h1 class="docs-header-title">Document Ingestion & Repository</h1>
+                        <p class="docs-header-desc">
+                            Upload knowledge sources (.pdf, .docx, .txt, .md). Files are parsed, chunked, embedded with ChromaDB, and mined for Knowledge Graph entities.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Upload Dropzone -->
+                <div class="dropzone-card" id="dropzone">
+                    <input type="file" id="fileInput" style="display:none;" accept=".pdf,.docx,.txt,.md">
+                    <div class="dropzone-icon">
+                        <i class="fa-solid fa-cloud-arrow-up"></i>
+                    </div>
+                    <div class="dropzone-title">Click to upload or drag & drop files here</div>
+                    <div class="dropzone-subtitle">Supported formats processed automatically by the GraphRAG pipeline</div>
+                    <div class="dropzone-formats">
+                        <span class="format-pill">PDF</span>
+                        <span class="format-pill">DOCX</span>
+                        <span class="format-pill">TXT</span>
+                        <span class="format-pill">MD</span>
+                    </div>
+                </div>
+
+                <!-- Live Upload Status -->
+                <div class="upload-status-bar" id="uploadStatusBar">
+                    <div style="display:flex; align-items:center; font-size:13px;" id="uploadStatusText">
+                        Uploading and ingesting document...
+                    </div>
+                </div>
+
+                <!-- Documents Table -->
+                <div class="docs-table-wrap">
+                    <table class="docs-table">
+                        <thead>
+                            <tr>
+                                <th>Document</th>
+                                <th>Chunks</th>
+                                <th>Size</th>
+                                <th>Ingested At</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="docsTableBody">
+                            <tr id="docsEmptyRow">
+                                <td colspan="5" style="text-align:center; padding:30px; color:var(--text-muted);">
+                                    No documents ingested yet. Upload a file above to begin building your knowledge graph.
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══════════════════════════════════════════════════════
+             VIEW 4: SYSTEM DIAGNOSTICS & ARCHITECTURE
+             ═══════════════════════════════════════════════════════ -->
+        <section class="view-panel" id="view-diag">
+            <div class="diag-layout">
+                <div>
+                    <h1 class="docs-header-title">System Diagnostics & Platform Health</h1>
+                    <p class="docs-header-desc">
+                        Real-time status of vector collections, persistent multigraph, and dual-engine synthesis pipeline.
+                    </p>
+                </div>
+
+                <!-- Metrics Grid -->
+                <div class="diag-grid">
+                    <div class="diag-card">
+                        <div class="diag-card-header">
+                            <span class="diag-card-title"><i class="fa-solid fa-server"></i> FastAPI Service</span>
+                            <span class="badge-rec" style="background:rgba(16,185,129,0.2); color:#6ee7b7;" id="diagApiStatus">HEALTHY</span>
+                        </div>
+                        <div class="diag-card-rows">
+                            <div class="diag-row"><span>Version</span><b id="diagApiVersion">0.1.0</b></div>
+                            <div class="diag-row"><span>Environment</span><b id="diagApiEnv">development</b></div>
+                            <div class="diag-row"><span>Protocol</span><b>REST / HTTP</b></div>
+                        </div>
+                    </div>
+
+                    <div class="diag-card">
+                        <div class="diag-card-header">
+                            <span class="diag-card-title"><i class="fa-solid fa-database"></i> ChromaDB Vector Store</span>
+                        </div>
+                        <div class="diag-metric" id="diagVectorCount">-</div>
+                        <div class="diag-card-rows">
+                            <div class="diag-row"><span>Collection</span><b id="diagVectorColl">document_chunks</b></div>
+                            <div class="diag-row"><span>Embedding Model</span><b id="diagEmbeddingModel">all-MiniLM-L6-v2</b></div>
+                            <div class="diag-row"><span>Metric</span><b>Cosine Similarity</b></div>
+                        </div>
+                    </div>
+
+                    <div class="diag-card">
+                        <div class="diag-card-header">
+                            <span class="diag-card-title"><i class="fa-solid fa-diagram-project"></i> NetworkX Multigraph</span>
+                        </div>
+                        <div class="diag-metric"><span id="diagGraphNodes">-</span> <span style="font-size:14px; font-weight:normal; color:var(--text-muted);">Nodes</span></div>
+                        <div class="diag-card-rows">
+                            <div class="diag-row"><span>Total Edges / Triples</span><b id="diagGraphEdges">-</b></div>
+                            <div class="diag-row"><span>Graph Density</span><b id="diagGraphDensity">-</b></div>
+                            <div class="diag-row"><span>Persistence</span><b>SQLite & JSON</b></div>
+                        </div>
+                    </div>
+
+                    <div class="diag-card">
+                        <div class="diag-card-header">
+                            <span class="diag-card-title"><i class="fa-solid fa-microchip"></i> LLM Synthesis Engine</span>
+                        </div>
+                        <div class="diag-card-rows" style="margin-top:10px;">
+                            <div class="diag-row"><span>Primary LLM</span><b>Google Gemini 1.5 Flash</b></div>
+                            <div class="diag-row"><span>Fallback</span><b>Offline Grounded Synthesizer</b></div>
+                            <div class="diag-row"><span>Fusion</span><b>Reciprocal Rank Fusion (RRF)</b></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Architectural Explainer -->
+                <div class="arch-card">
+                    <h3>Hybrid GraphRAG Architectural Workflow</h3>
+                    <p>
+                        GraphRAG overcomes the limitations of naive vector search by unifying dense semantic embeddings with relational knowledge graph traversals.
+                    </p>
+
+                    <div class="arch-steps-grid">
+                        <div class="arch-step-box">
+                            <b>1. Ingestion & Graphing</b>
+                            <span>Documents are parsed into chunks and embedded in ChromaDB while simultaneously extracting entities and relations into a NetworkX graph.</span>
+                        </div>
+                        <div class="arch-step-box">
+                            <b>2. Dual-Mode Retrieval</b>
+                            <span>User queries trigger dense semantic cosine search and k-hop relational graph traversals in parallel.</span>
+                        </div>
+                        <div class="arch-step-box">
+                            <b>3. Reciprocal Rank Fusion</b>
+                            <span>Chunks mentioning retrieved graph entities receive provenance boost scoring to guarantee structural relevance.</span>
+                        </div>
+                        <div class="arch-step-box">
+                            <b>4. Grounded Synthesis</b>
+                            <span>The dual-engine LLM generates answers derivationally restricted to retrieved passages and factual triples with inline citations.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ── Document Chunks Modal ────────────────────────────── -->
+    <div class="modal-overlay" id="chunksModal">
+        <div class="modal-card">
+            <div class="modal-header">
+                <span class="modal-title" id="chunksModalTitle">Document Chunks</span>
+                <button class="modal-close-btn" id="chunksModalClose">&times;</button>
+            </div>
+            <div class="modal-body" id="chunksModalBody">
+                <!-- Chunks inserted dynamically -->
+            </div>
+        </div>
+    </div>
+
+    <!-- ── Toast Notifications ──────────────────────────────── -->
+    <div class="toast-container" id="toastContainer"></div>
+
+    <!-- Application Scripts -->
+    <script src="/js/api.js?v=graphfix3"></script>
+    <script src="/js/graph-viz.js?v=graphfix3"></script>
+    <script src="/js/app.js?v=graphfix3"></script>
+</body>
+</html>

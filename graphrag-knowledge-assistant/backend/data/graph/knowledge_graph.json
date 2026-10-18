@@ -1,0 +1,1323 @@
+{
+  "directed": true,
+  "multigraph": true,
+  "graph": {},
+  "nodes": [
+    {
+      "entity_type": "CONCEPT",
+      "description": "",
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "caca507a-dcea-4701-b002-2de14cafe264",
+      "id": "Tamil Nadu"
+    },
+    {
+      "entity_type": "CONCEPT",
+      "description": "",
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "caca507a-dcea-4701-b002-2de14cafe264",
+      "id": "Madurai College"
+    },
+    {
+      "entity_type": "CONCEPT",
+      "description": "",
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "caca507a-dcea-4701-b002-2de14cafe264",
+      "id": "Computer Science"
+    },
+    {
+      "entity_type": "CONCEPT",
+      "description": "",
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "caca507a-dcea-4701-b002-2de14cafe264",
+      "id": "Higher Secondary School"
+    },
+    {
+      "entity_type": "CONCEPT",
+      "description": "",
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "caca507a-dcea-4701-b002-2de14cafe264",
+      "id": "Programming Languages"
+    },
+    {
+      "entity_type": "CONCEPT",
+      "description": "",
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "caca507a-dcea-4701-b002-2de14cafe264",
+      "id": "Exception Handling"
+    },
+    {
+      "entity_type": "CONCEPT",
+      "description": "",
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "ce866bf1-0a91-4238-a9de-db2660cc3864",
+      "id": "Spring Boot"
+    },
+    {
+      "entity_type": "CONCEPT",
+      "description": "",
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "cb2ee9d7-9c4a-40de-9d30-c1ebec4d0473",
+      "id": "Machine Learning"
+    },
+    {
+      "entity_type": "CONCEPT",
+      "description": "",
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "ddd473d3-d641-4aa9-a3ba-09ad91c0655b",
+      "id": "Computer Vision"
+    },
+    {
+      "entity_type": "CONCEPT",
+      "description": "",
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "cb2ee9d7-9c4a-40de-9d30-c1ebec4d0473",
+      "id": "Vector Databases"
+    },
+    {
+      "entity_type": "TECHNOLOGY",
+      "description": "",
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "caca507a-dcea-4701-b002-2de14cafe264",
+      "id": "TARUN"
+    },
+    {
+      "entity_type": "TECHNOLOGY",
+      "description": "",
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "e2a6293f-10d2-4e46-aa14-b5622aae918d",
+      "id": "SRM"
+    },
+    {
+      "entity_type": "TECHNOLOGY",
+      "description": "",
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "caca507a-dcea-4701-b002-2de14cafe264",
+      "id": "CGPA"
+    },
+    {
+      "entity_type": "TECHNOLOGY",
+      "description": "",
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "caca507a-dcea-4701-b002-2de14cafe264",
+      "id": "VHN"
+    },
+    {
+      "entity_type": "TECHNOLOGY",
+      "description": "",
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "caca507a-dcea-4701-b002-2de14cafe264",
+      "id": "SKILLS"
+    },
+    {
+      "entity_type": "TECHNOLOGY",
+      "description": "",
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "cb2ee9d7-9c4a-40de-9d30-c1ebec4d0473",
+      "id": "SQL"
+    },
+    {
+      "entity_type": "TECHNOLOGY",
+      "description": "",
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "caca507a-dcea-4701-b002-2de14cafe264",
+      "id": "HTML"
+    },
+    {
+      "entity_type": "TECHNOLOGY",
+      "description": "",
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "caca507a-dcea-4701-b002-2de14cafe264",
+      "id": "CSS"
+    },
+    {
+      "entity_type": "TECHNOLOGY",
+      "description": "",
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "caca507a-dcea-4701-b002-2de14cafe264",
+      "id": "OOP"
+    },
+    {
+      "entity_type": "TECHNOLOGY",
+      "description": "",
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "cb2ee9d7-9c4a-40de-9d30-c1ebec4d0473",
+      "id": "JDBC"
+    },
+    {
+      "entity_type": "TECHNOLOGY",
+      "description": "",
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "ce866bf1-0a91-4238-a9de-db2660cc3864",
+      "id": "REST"
+    },
+    {
+      "entity_type": "TECHNOLOGY",
+      "description": "",
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "e2a6293f-10d2-4e46-aa14-b5622aae918d",
+      "id": "APIs"
+    },
+    {
+      "entity_type": "TECHNOLOGY",
+      "description": "",
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "ddd473d3-d641-4aa9-a3ba-09ad91c0655b",
+      "id": "AI"
+    },
+    {
+      "entity_type": "TECHNOLOGY",
+      "description": "",
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "ddd473d3-d641-4aa9-a3ba-09ad91c0655b",
+      "id": "ML"
+    },
+    {
+      "entity_type": "TECHNOLOGY",
+      "description": "",
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "ddd473d3-d641-4aa9-a3ba-09ad91c0655b",
+      "id": "NLP"
+    },
+    {
+      "entity_type": "TECHNOLOGY",
+      "description": "",
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "528c6ac6-9aa0-405d-a56e-ca714c7f963b",
+      "id": "RAG"
+    },
+    {
+      "entity_type": "TECHNOLOGY",
+      "description": "",
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "cb2ee9d7-9c4a-40de-9d30-c1ebec4d0473",
+      "id": "LLMs"
+    },
+    {
+      "entity_type": "CONCEPT",
+      "description": "",
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "cb2ee9d7-9c4a-40de-9d30-c1ebec4d0473",
+      "id": "Jupyter Notebook"
+    },
+    {
+      "entity_type": "CONCEPT",
+      "description": "",
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "cb2ee9d7-9c4a-40de-9d30-c1ebec4d0473",
+      "id": "Code Databases"
+    },
+    {
+      "entity_type": "CONCEPT",
+      "description": "",
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "cb2ee9d7-9c4a-40de-9d30-c1ebec4d0473",
+      "id": "Powered Recruitment"
+    },
+    {
+      "entity_type": "CONCEPT",
+      "description": "",
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "cb2ee9d7-9c4a-40de-9d30-c1ebec4d0473",
+      "id": "Interview Intelligence Platform Java"
+    },
+    {
+      "entity_type": "CONCEPT",
+      "description": "",
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "528c6ac6-9aa0-405d-a56e-ca714c7f963b",
+      "id": "Developed Spring Boot"
+    },
+    {
+      "entity_type": "TECHNOLOGY",
+      "description": "",
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "cb2ee9d7-9c4a-40de-9d30-c1ebec4d0473",
+      "id": "VS"
+    },
+    {
+      "entity_type": "TECHNOLOGY",
+      "description": "",
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "528c6ac6-9aa0-405d-a56e-ca714c7f963b",
+      "id": "LLM"
+    },
+    {
+      "entity_type": "CONCEPT",
+      "description": "",
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "528c6ac6-9aa0-405d-a56e-ca714c7f963b",
+      "id": "Knowledge Intelligence Assistant Python"
+    },
+    {
+      "entity_type": "CONCEPT",
+      "description": "",
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "528c6ac6-9aa0-405d-a56e-ca714c7f963b",
+      "id": "Vector Database"
+    },
+    {
+      "entity_type": "TECHNOLOGY",
+      "description": "",
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "528c6ac6-9aa0-405d-a56e-ca714c7f963b",
+      "id": "Smart Campus Service Management System Java"
+    },
+    {
+      "entity_type": "CONCEPT",
+      "description": "",
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "ce866bf1-0a91-4238-a9de-db2660cc3864",
+      "id": "Spring Data"
+    },
+    {
+      "entity_type": "TECHNOLOGY",
+      "description": "",
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "ce866bf1-0a91-4238-a9de-db2660cc3864",
+      "id": "JPA"
+    },
+    {
+      "entity_type": "TECHNOLOGY",
+      "description": "",
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "6e664afd-99fc-4c51-abcd-4a6852179486",
+      "id": "Geofencing Attendance System"
+    },
+    {
+      "entity_type": "CONCEPT",
+      "description": "",
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "6e664afd-99fc-4c51-abcd-4a6852179486",
+      "id": "Developed React"
+    },
+    {
+      "entity_type": "CONCEPT",
+      "description": "",
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "6e664afd-99fc-4c51-abcd-4a6852179486",
+      "id": "Project Management"
+    },
+    {
+      "entity_type": "CONCEPT",
+      "description": "",
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "6e664afd-99fc-4c51-abcd-4a6852179486",
+      "id": "Collaboration Platform"
+    },
+    {
+      "entity_type": "TECHNOLOGY",
+      "description": "",
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "6e664afd-99fc-4c51-abcd-4a6852179486",
+      "id": "MERN"
+    },
+    {
+      "entity_type": "CONCEPT",
+      "description": "",
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "e2a6293f-10d2-4e46-aa14-b5622aae918d",
+      "id": "Project Management Intern"
+    },
+    {
+      "entity_type": "CONCEPT",
+      "description": "",
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "e2a6293f-10d2-4e46-aa14-b5622aae918d",
+      "id": "Consulting Pvt Ltd"
+    },
+    {
+      "entity_type": "CONCEPT",
+      "description": "",
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "e2a6293f-10d2-4e46-aa14-b5622aae918d",
+      "id": "Python Programming Intern"
+    },
+    {
+      "entity_type": "CONCEPT",
+      "description": "",
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "e2a6293f-10d2-4e46-aa14-b5622aae918d",
+      "id": "Techmango Technology Services Pvt Ltd"
+    },
+    {
+      "entity_type": "CONCEPT",
+      "description": "",
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "e2a6293f-10d2-4e46-aa14-b5622aae918d",
+      "id": "Python Programming"
+    },
+    {
+      "entity_type": "CONCEPT",
+      "description": "",
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "e2a6293f-10d2-4e46-aa14-b5622aae918d",
+      "id": "Vadapalani Campus"
+    },
+    {
+      "entity_type": "CONCEPT",
+      "description": "",
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "e2a6293f-10d2-4e46-aa14-b5622aae918d",
+      "id": "Problem Solving Through Programming"
+    },
+    {
+      "entity_type": "CONCEPT",
+      "description": "",
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "e2a6293f-10d2-4e46-aa14-b5622aae918d",
+      "id": "The Joy"
+    },
+    {
+      "entity_type": "CONCEPT",
+      "description": "",
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "e2a6293f-10d2-4e46-aa14-b5622aae918d",
+      "id": "Computing Using Python"
+    },
+    {
+      "entity_type": "CONCEPT",
+      "description": "",
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "e2a6293f-10d2-4e46-aa14-b5622aae918d",
+      "id": "Cloud Computing"
+    },
+    {
+      "entity_type": "CONCEPT",
+      "description": "",
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "ce866bf1-0a91-4238-a9de-db2660cc3864",
+      "id": "Infosys Springboard"
+    },
+    {
+      "entity_type": "TECHNOLOGY",
+      "description": "",
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "e2a6293f-10d2-4e46-aa14-b5622aae918d",
+      "id": "NSDC"
+    },
+    {
+      "entity_type": "TECHNOLOGY",
+      "description": "",
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "e2a6293f-10d2-4e46-aa14-b5622aae918d",
+      "id": "GDG"
+    },
+    {
+      "entity_type": "TECHNOLOGY",
+      "description": "",
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "ce866bf1-0a91-4238-a9de-db2660cc3864",
+      "id": "NPTEL"
+    },
+    {
+      "entity_type": "TECHNOLOGY",
+      "description": "",
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "ce866bf1-0a91-4238-a9de-db2660cc3864",
+      "id": "IIT"
+    },
+    {
+      "entity_type": "CONCEPT",
+      "description": "",
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "ddd473d3-d641-4aa9-a3ba-09ad91c0655b",
+      "id": "Gyan Mitra"
+    },
+    {
+      "entity_type": "CONCEPT",
+      "description": "",
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "ddd473d3-d641-4aa9-a3ba-09ad91c0655b",
+      "id": "National Level Techno Symposium"
+    },
+    {
+      "entity_type": "CONCEPT",
+      "description": "",
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "ddd473d3-d641-4aa9-a3ba-09ad91c0655b",
+      "id": "Mepco Schlenk Engineering College"
+    },
+    {
+      "entity_type": "TECHNOLOGY",
+      "description": "",
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "ddd473d3-d641-4aa9-a3ba-09ad91c0655b",
+      "id": "KNOWN"
+    }
+  ],
+  "edges": [
+    {
+      "relation": "RELATED_TO",
+      "weight": 0.5,
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "caca507a-dcea-4701-b002-2de14cafe264",
+      "source": "Tamil Nadu",
+      "target": "Madurai College",
+      "key": 0
+    },
+    {
+      "relation": "RELATED_TO",
+      "weight": 0.5,
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "caca507a-dcea-4701-b002-2de14cafe264",
+      "source": "Madurai College",
+      "target": "TARUN",
+      "key": 0
+    },
+    {
+      "relation": "RELATED_TO",
+      "weight": 0.5,
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "caca507a-dcea-4701-b002-2de14cafe264",
+      "source": "Computer Science",
+      "target": "Higher Secondary School",
+      "key": 0
+    },
+    {
+      "relation": "RELATED_TO",
+      "weight": 0.5,
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "caca507a-dcea-4701-b002-2de14cafe264",
+      "source": "Higher Secondary School",
+      "target": "Programming Languages",
+      "key": 0
+    },
+    {
+      "relation": "RELATED_TO",
+      "weight": 0.5,
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "caca507a-dcea-4701-b002-2de14cafe264",
+      "source": "Programming Languages",
+      "target": "Exception Handling",
+      "key": 0
+    },
+    {
+      "relation": "RELATED_TO",
+      "weight": 0.5,
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "caca507a-dcea-4701-b002-2de14cafe264",
+      "source": "Exception Handling",
+      "target": "Spring Boot",
+      "key": 0
+    },
+    {
+      "relation": "RELATED_TO",
+      "weight": 0.5,
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "caca507a-dcea-4701-b002-2de14cafe264",
+      "source": "Spring Boot",
+      "target": "Machine Learning",
+      "key": 0
+    },
+    {
+      "relation": "RELATED_TO",
+      "weight": 0.5,
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "cb2ee9d7-9c4a-40de-9d30-c1ebec4d0473",
+      "source": "Spring Boot",
+      "target": "Machine Learning",
+      "key": 1
+    },
+    {
+      "relation": "RELATED_TO",
+      "weight": 0.5,
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "cb2ee9d7-9c4a-40de-9d30-c1ebec4d0473",
+      "source": "Spring Boot",
+      "target": "Jupyter Notebook",
+      "key": 0
+    },
+    {
+      "relation": "RELATED_TO",
+      "weight": 0.5,
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "cb2ee9d7-9c4a-40de-9d30-c1ebec4d0473",
+      "source": "Spring Boot",
+      "target": "Developed Spring Boot",
+      "key": 0
+    },
+    {
+      "relation": "RELATED_TO",
+      "weight": 0.5,
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "528c6ac6-9aa0-405d-a56e-ca714c7f963b",
+      "source": "Spring Boot",
+      "target": "REST",
+      "key": 0
+    },
+    {
+      "relation": "RELATED_TO",
+      "weight": 0.5,
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "e2a6293f-10d2-4e46-aa14-b5622aae918d",
+      "source": "Spring Boot",
+      "target": "REST",
+      "key": 1
+    },
+    {
+      "relation": "RELATED_TO",
+      "weight": 0.5,
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "528c6ac6-9aa0-405d-a56e-ca714c7f963b",
+      "source": "Spring Boot",
+      "target": "Spring Data",
+      "key": 0
+    },
+    {
+      "relation": "RELATED_TO",
+      "weight": 0.5,
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "528c6ac6-9aa0-405d-a56e-ca714c7f963b",
+      "source": "Spring Boot",
+      "target": "JPA",
+      "key": 0
+    },
+    {
+      "relation": "RELATED_TO",
+      "weight": 0.5,
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "6e664afd-99fc-4c51-abcd-4a6852179486",
+      "source": "Spring Boot",
+      "target": "JPA",
+      "key": 1
+    },
+    {
+      "relation": "RELATED_TO",
+      "weight": 0.5,
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "ce866bf1-0a91-4238-a9de-db2660cc3864",
+      "source": "Spring Boot",
+      "target": "Gyan Mitra",
+      "key": 0
+    },
+    {
+      "relation": "RELATED_TO",
+      "weight": 0.5,
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "caca507a-dcea-4701-b002-2de14cafe264",
+      "source": "Machine Learning",
+      "target": "Computer Vision",
+      "key": 0
+    },
+    {
+      "relation": "RELATED_TO",
+      "weight": 0.5,
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "cb2ee9d7-9c4a-40de-9d30-c1ebec4d0473",
+      "source": "Machine Learning",
+      "target": "Computer Vision",
+      "key": 1
+    },
+    {
+      "relation": "RELATED_TO",
+      "weight": 0.5,
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "caca507a-dcea-4701-b002-2de14cafe264",
+      "source": "Computer Vision",
+      "target": "CGPA",
+      "key": 0
+    },
+    {
+      "relation": "RELATED_TO",
+      "weight": 0.5,
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "cb2ee9d7-9c4a-40de-9d30-c1ebec4d0473",
+      "source": "Computer Vision",
+      "target": "JDBC",
+      "key": 0
+    },
+    {
+      "relation": "RELATED_TO",
+      "weight": 0.5,
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "ddd473d3-d641-4aa9-a3ba-09ad91c0655b",
+      "source": "Computer Vision",
+      "target": "AI",
+      "key": 0
+    },
+    {
+      "relation": "RELATED_TO",
+      "weight": 0.5,
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "caca507a-dcea-4701-b002-2de14cafe264",
+      "source": "TARUN",
+      "target": "SRM",
+      "key": 0
+    },
+    {
+      "relation": "RELATED_TO",
+      "weight": 0.5,
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "caca507a-dcea-4701-b002-2de14cafe264",
+      "source": "SRM",
+      "target": "AI",
+      "key": 0
+    },
+    {
+      "relation": "RELATED_TO",
+      "weight": 0.5,
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "e2a6293f-10d2-4e46-aa14-b5622aae918d",
+      "source": "SRM",
+      "target": "NSDC",
+      "key": 0
+    },
+    {
+      "relation": "RELATED_TO",
+      "weight": 0.5,
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "caca507a-dcea-4701-b002-2de14cafe264",
+      "source": "CGPA",
+      "target": "VHN",
+      "key": 0
+    },
+    {
+      "relation": "RELATED_TO",
+      "weight": 0.5,
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "caca507a-dcea-4701-b002-2de14cafe264",
+      "source": "VHN",
+      "target": "SKILLS",
+      "key": 0
+    },
+    {
+      "relation": "RELATED_TO",
+      "weight": 0.5,
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "caca507a-dcea-4701-b002-2de14cafe264",
+      "source": "SKILLS",
+      "target": "SQL",
+      "key": 0
+    },
+    {
+      "relation": "RELATED_TO",
+      "weight": 0.5,
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "caca507a-dcea-4701-b002-2de14cafe264",
+      "source": "SQL",
+      "target": "HTML",
+      "key": 0
+    },
+    {
+      "relation": "RELATED_TO",
+      "weight": 0.5,
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "cb2ee9d7-9c4a-40de-9d30-c1ebec4d0473",
+      "source": "SQL",
+      "target": "REST",
+      "key": 0
+    },
+    {
+      "relation": "RELATED_TO",
+      "weight": 0.5,
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "caca507a-dcea-4701-b002-2de14cafe264",
+      "source": "HTML",
+      "target": "CSS",
+      "key": 0
+    },
+    {
+      "relation": "RELATED_TO",
+      "weight": 0.5,
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "caca507a-dcea-4701-b002-2de14cafe264",
+      "source": "CSS",
+      "target": "OOP",
+      "key": 0
+    },
+    {
+      "relation": "RELATED_TO",
+      "weight": 0.5,
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "caca507a-dcea-4701-b002-2de14cafe264",
+      "source": "OOP",
+      "target": "JDBC",
+      "key": 0
+    },
+    {
+      "relation": "RELATED_TO",
+      "weight": 0.5,
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "caca507a-dcea-4701-b002-2de14cafe264",
+      "source": "JDBC",
+      "target": "REST",
+      "key": 0
+    },
+    {
+      "relation": "RELATED_TO",
+      "weight": 0.5,
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "cb2ee9d7-9c4a-40de-9d30-c1ebec4d0473",
+      "source": "JDBC",
+      "target": "SQL",
+      "key": 0
+    },
+    {
+      "relation": "RELATED_TO",
+      "weight": 0.5,
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "caca507a-dcea-4701-b002-2de14cafe264",
+      "source": "REST",
+      "target": "APIs",
+      "key": 0
+    },
+    {
+      "relation": "RELATED_TO",
+      "weight": 0.5,
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "cb2ee9d7-9c4a-40de-9d30-c1ebec4d0473",
+      "source": "REST",
+      "target": "APIs",
+      "key": 1
+    },
+    {
+      "relation": "RELATED_TO",
+      "weight": 0.5,
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "528c6ac6-9aa0-405d-a56e-ca714c7f963b",
+      "source": "REST",
+      "target": "APIs",
+      "key": 2
+    },
+    {
+      "relation": "RELATED_TO",
+      "weight": 0.5,
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "e2a6293f-10d2-4e46-aa14-b5622aae918d",
+      "source": "REST",
+      "target": "APIs",
+      "key": 3
+    },
+    {
+      "relation": "RELATED_TO",
+      "weight": 0.5,
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "e2a6293f-10d2-4e46-aa14-b5622aae918d",
+      "source": "REST",
+      "target": "SRM",
+      "key": 0
+    },
+    {
+      "relation": "RELATED_TO",
+      "weight": 0.5,
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "ce866bf1-0a91-4238-a9de-db2660cc3864",
+      "source": "REST",
+      "target": "JPA",
+      "key": 0
+    },
+    {
+      "relation": "RELATED_TO",
+      "weight": 0.5,
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "caca507a-dcea-4701-b002-2de14cafe264",
+      "source": "APIs",
+      "target": "AI",
+      "key": 0
+    },
+    {
+      "relation": "RELATED_TO",
+      "weight": 0.5,
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "cb2ee9d7-9c4a-40de-9d30-c1ebec4d0473",
+      "source": "APIs",
+      "target": "AI",
+      "key": 1
+    },
+    {
+      "relation": "RELATED_TO",
+      "weight": 0.5,
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "cb2ee9d7-9c4a-40de-9d30-c1ebec4d0473",
+      "source": "APIs",
+      "target": "LLM",
+      "key": 0
+    },
+    {
+      "relation": "RELATED_TO",
+      "weight": 0.5,
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "528c6ac6-9aa0-405d-a56e-ca714c7f963b",
+      "source": "APIs",
+      "target": "LLM",
+      "key": 1
+    },
+    {
+      "relation": "RELATED_TO",
+      "weight": 0.5,
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "528c6ac6-9aa0-405d-a56e-ca714c7f963b",
+      "source": "APIs",
+      "target": "JPA",
+      "key": 0
+    },
+    {
+      "relation": "RELATED_TO",
+      "weight": 0.5,
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "6e664afd-99fc-4c51-abcd-4a6852179486",
+      "source": "APIs",
+      "target": "REST",
+      "key": 0
+    },
+    {
+      "relation": "RELATED_TO",
+      "weight": 0.5,
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "caca507a-dcea-4701-b002-2de14cafe264",
+      "source": "AI",
+      "target": "ML",
+      "key": 0
+    },
+    {
+      "relation": "RELATED_TO",
+      "weight": 0.5,
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "cb2ee9d7-9c4a-40de-9d30-c1ebec4d0473",
+      "source": "AI",
+      "target": "ML",
+      "key": 1
+    },
+    {
+      "relation": "RELATED_TO",
+      "weight": 0.5,
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "ddd473d3-d641-4aa9-a3ba-09ad91c0655b",
+      "source": "AI",
+      "target": "ML",
+      "key": 2
+    },
+    {
+      "relation": "RELATED_TO",
+      "weight": 0.5,
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "cb2ee9d7-9c4a-40de-9d30-c1ebec4d0473",
+      "source": "AI",
+      "target": "NLP",
+      "key": 0
+    },
+    {
+      "relation": "RELATED_TO",
+      "weight": 0.5,
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "caca507a-dcea-4701-b002-2de14cafe264",
+      "source": "ML",
+      "target": "NLP",
+      "key": 0
+    },
+    {
+      "relation": "RELATED_TO",
+      "weight": 0.5,
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "cb2ee9d7-9c4a-40de-9d30-c1ebec4d0473",
+      "source": "ML",
+      "target": "NLP",
+      "key": 1
+    },
+    {
+      "relation": "RELATED_TO",
+      "weight": 0.5,
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "ddd473d3-d641-4aa9-a3ba-09ad91c0655b",
+      "source": "ML",
+      "target": "NLP",
+      "key": 2
+    },
+    {
+      "relation": "RELATED_TO",
+      "weight": 0.5,
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "caca507a-dcea-4701-b002-2de14cafe264",
+      "source": "NLP",
+      "target": "RAG",
+      "key": 0
+    },
+    {
+      "relation": "RELATED_TO",
+      "weight": 0.5,
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "cb2ee9d7-9c4a-40de-9d30-c1ebec4d0473",
+      "source": "NLP",
+      "target": "RAG",
+      "key": 1
+    },
+    {
+      "relation": "RELATED_TO",
+      "weight": 0.5,
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "cb2ee9d7-9c4a-40de-9d30-c1ebec4d0473",
+      "source": "NLP",
+      "target": "VS",
+      "key": 0
+    },
+    {
+      "relation": "RELATED_TO",
+      "weight": 0.5,
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "caca507a-dcea-4701-b002-2de14cafe264",
+      "source": "RAG",
+      "target": "LLMs",
+      "key": 0
+    },
+    {
+      "relation": "RELATED_TO",
+      "weight": 0.5,
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "cb2ee9d7-9c4a-40de-9d30-c1ebec4d0473",
+      "source": "RAG",
+      "target": "LLMs",
+      "key": 1
+    },
+    {
+      "relation": "RELATED_TO",
+      "weight": 0.5,
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "cb2ee9d7-9c4a-40de-9d30-c1ebec4d0473",
+      "source": "LLMs",
+      "target": "LLM",
+      "key": 0
+    },
+    {
+      "relation": "RELATED_TO",
+      "weight": 0.5,
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "cb2ee9d7-9c4a-40de-9d30-c1ebec4d0473",
+      "source": "Jupyter Notebook",
+      "target": "Powered Recruitment",
+      "key": 0
+    },
+    {
+      "relation": "RELATED_TO",
+      "weight": 0.5,
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "cb2ee9d7-9c4a-40de-9d30-c1ebec4d0473",
+      "source": "Powered Recruitment",
+      "target": "SQL",
+      "key": 0
+    },
+    {
+      "relation": "RELATED_TO",
+      "weight": 0.5,
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "cb2ee9d7-9c4a-40de-9d30-c1ebec4d0473",
+      "source": "Developed Spring Boot",
+      "target": "SQL",
+      "key": 0
+    },
+    {
+      "relation": "RELATED_TO",
+      "weight": 0.5,
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "528c6ac6-9aa0-405d-a56e-ca714c7f963b",
+      "source": "Developed Spring Boot",
+      "target": "Spring Boot",
+      "key": 0
+    },
+    {
+      "relation": "RELATED_TO",
+      "weight": 0.5,
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "cb2ee9d7-9c4a-40de-9d30-c1ebec4d0473",
+      "source": "VS",
+      "target": "LLM",
+      "key": 0
+    },
+    {
+      "relation": "RELATED_TO",
+      "weight": 0.5,
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "528c6ac6-9aa0-405d-a56e-ca714c7f963b",
+      "source": "LLM",
+      "target": "RAG",
+      "key": 0
+    },
+    {
+      "relation": "RELATED_TO",
+      "weight": 0.5,
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "528c6ac6-9aa0-405d-a56e-ca714c7f963b",
+      "source": "Vector Database",
+      "target": "LLM",
+      "key": 0
+    },
+    {
+      "relation": "RELATED_TO",
+      "weight": 0.5,
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "528c6ac6-9aa0-405d-a56e-ca714c7f963b",
+      "source": "Spring Data",
+      "target": "REST",
+      "key": 0
+    },
+    {
+      "relation": "RELATED_TO",
+      "weight": 0.5,
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "e2a6293f-10d2-4e46-aa14-b5622aae918d",
+      "source": "Spring Data",
+      "target": "Spring Boot",
+      "key": 0
+    },
+    {
+      "relation": "RELATED_TO",
+      "weight": 0.5,
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "ce866bf1-0a91-4238-a9de-db2660cc3864",
+      "source": "Spring Data",
+      "target": "Spring Boot",
+      "key": 1
+    },
+    {
+      "relation": "RELATED_TO",
+      "weight": 0.5,
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "6e664afd-99fc-4c51-abcd-4a6852179486",
+      "source": "Geofencing Attendance System",
+      "target": "MERN",
+      "key": 0
+    },
+    {
+      "relation": "RELATED_TO",
+      "weight": 0.5,
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "6e664afd-99fc-4c51-abcd-4a6852179486",
+      "source": "Developed React",
+      "target": "APIs",
+      "key": 0
+    },
+    {
+      "relation": "RELATED_TO",
+      "weight": 0.5,
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "6e664afd-99fc-4c51-abcd-4a6852179486",
+      "source": "Project Management",
+      "target": "Collaboration Platform",
+      "key": 0
+    },
+    {
+      "relation": "RELATED_TO",
+      "weight": 0.5,
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "6e664afd-99fc-4c51-abcd-4a6852179486",
+      "source": "Collaboration Platform",
+      "target": "MERN",
+      "key": 0
+    },
+    {
+      "relation": "RELATED_TO",
+      "weight": 0.5,
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "6e664afd-99fc-4c51-abcd-4a6852179486",
+      "source": "MERN",
+      "target": "APIs",
+      "key": 0
+    },
+    {
+      "relation": "RELATED_TO",
+      "weight": 0.5,
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "e2a6293f-10d2-4e46-aa14-b5622aae918d",
+      "source": "Project Management Intern",
+      "target": "Consulting Pvt Ltd",
+      "key": 0
+    },
+    {
+      "relation": "RELATED_TO",
+      "weight": 0.5,
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "e2a6293f-10d2-4e46-aa14-b5622aae918d",
+      "source": "Consulting Pvt Ltd",
+      "target": "Python Programming Intern",
+      "key": 0
+    },
+    {
+      "relation": "RELATED_TO",
+      "weight": 0.5,
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "e2a6293f-10d2-4e46-aa14-b5622aae918d",
+      "source": "Python Programming Intern",
+      "target": "Techmango Technology Services Pvt Ltd",
+      "key": 0
+    },
+    {
+      "relation": "RELATED_TO",
+      "weight": 0.5,
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "e2a6293f-10d2-4e46-aa14-b5622aae918d",
+      "source": "Techmango Technology Services Pvt Ltd",
+      "target": "Python Programming",
+      "key": 0
+    },
+    {
+      "relation": "RELATED_TO",
+      "weight": 0.5,
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "e2a6293f-10d2-4e46-aa14-b5622aae918d",
+      "source": "Python Programming",
+      "target": "Vadapalani Campus",
+      "key": 0
+    },
+    {
+      "relation": "RELATED_TO",
+      "weight": 0.5,
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "e2a6293f-10d2-4e46-aa14-b5622aae918d",
+      "source": "Vadapalani Campus",
+      "target": "Problem Solving Through Programming",
+      "key": 0
+    },
+    {
+      "relation": "RELATED_TO",
+      "weight": 0.5,
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "e2a6293f-10d2-4e46-aa14-b5622aae918d",
+      "source": "Problem Solving Through Programming",
+      "target": "The Joy",
+      "key": 0
+    },
+    {
+      "relation": "RELATED_TO",
+      "weight": 0.5,
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "e2a6293f-10d2-4e46-aa14-b5622aae918d",
+      "source": "The Joy",
+      "target": "Computing Using Python",
+      "key": 0
+    },
+    {
+      "relation": "RELATED_TO",
+      "weight": 0.5,
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "e2a6293f-10d2-4e46-aa14-b5622aae918d",
+      "source": "Computing Using Python",
+      "target": "Cloud Computing",
+      "key": 0
+    },
+    {
+      "relation": "RELATED_TO",
+      "weight": 0.5,
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "e2a6293f-10d2-4e46-aa14-b5622aae918d",
+      "source": "Cloud Computing",
+      "target": "Infosys Springboard",
+      "key": 0
+    },
+    {
+      "relation": "RELATED_TO",
+      "weight": 0.5,
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "e2a6293f-10d2-4e46-aa14-b5622aae918d",
+      "source": "Infosys Springboard",
+      "target": "Spring Data",
+      "key": 0
+    },
+    {
+      "relation": "RELATED_TO",
+      "weight": 0.5,
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "ce866bf1-0a91-4238-a9de-db2660cc3864",
+      "source": "Infosys Springboard",
+      "target": "Spring Data",
+      "key": 1
+    },
+    {
+      "relation": "RELATED_TO",
+      "weight": 0.5,
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "e2a6293f-10d2-4e46-aa14-b5622aae918d",
+      "source": "NSDC",
+      "target": "GDG",
+      "key": 0
+    },
+    {
+      "relation": "RELATED_TO",
+      "weight": 0.5,
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "e2a6293f-10d2-4e46-aa14-b5622aae918d",
+      "source": "GDG",
+      "target": "NPTEL",
+      "key": 0
+    },
+    {
+      "relation": "RELATED_TO",
+      "weight": 0.5,
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "e2a6293f-10d2-4e46-aa14-b5622aae918d",
+      "source": "NPTEL",
+      "target": "IIT",
+      "key": 0
+    },
+    {
+      "relation": "RELATED_TO",
+      "weight": 0.5,
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "ce866bf1-0a91-4238-a9de-db2660cc3864",
+      "source": "NPTEL",
+      "target": "IIT",
+      "key": 1
+    },
+    {
+      "relation": "RELATED_TO",
+      "weight": 0.5,
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "e2a6293f-10d2-4e46-aa14-b5622aae918d",
+      "source": "IIT",
+      "target": "JPA",
+      "key": 0
+    },
+    {
+      "relation": "RELATED_TO",
+      "weight": 0.5,
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "ce866bf1-0a91-4238-a9de-db2660cc3864",
+      "source": "IIT",
+      "target": "REST",
+      "key": 0
+    },
+    {
+      "relation": "RELATED_TO",
+      "weight": 0.5,
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "ce866bf1-0a91-4238-a9de-db2660cc3864",
+      "source": "Gyan Mitra",
+      "target": "National Level Techno Symposium",
+      "key": 0
+    },
+    {
+      "relation": "RELATED_TO",
+      "weight": 0.5,
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "ddd473d3-d641-4aa9-a3ba-09ad91c0655b",
+      "source": "Gyan Mitra",
+      "target": "National Level Techno Symposium",
+      "key": 1
+    },
+    {
+      "relation": "RELATED_TO",
+      "weight": 0.5,
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "ce866bf1-0a91-4238-a9de-db2660cc3864",
+      "source": "National Level Techno Symposium",
+      "target": "Mepco Schlenk Engineering College",
+      "key": 0
+    },
+    {
+      "relation": "RELATED_TO",
+      "weight": 0.5,
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "ddd473d3-d641-4aa9-a3ba-09ad91c0655b",
+      "source": "National Level Techno Symposium",
+      "target": "Mepco Schlenk Engineering College",
+      "key": 1
+    },
+    {
+      "relation": "RELATED_TO",
+      "weight": 0.5,
+      "document_id": "1cb85286-9a33-469d-8127-283da0e14246",
+      "chunk_id": "ce866bf1-0a91-4238-a9de-db2660cc3864",
+      "source": "Mepco Schlenk Engineering College",
+      "target": "NPTEL",
+      "key": 0
+    }
+  ]
+}
